@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs\nMarketing copy in seconds with AI\n",
+    "price": 29,
+    "image": "https://i.ibb.co/Lz2jNqCM/writing-2327400-1.png",
+    "featured": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "status": "Best Seller"
+  },
+  {
+    "id": 2,
+    "title": "Design Templates Pack",
+    "description": "2000+ premium templates for social media,\nrepresentations, and marketing materials.",
+    "price": 49,
+    "image": "https://i.ibb.co/FLMjQcmv/design-tool.png",
+    "featured": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ],
+    "status": "Popular"
+  },
+  {
+    "id": 3,
+    "title": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos,\nvideos, and graphics for your projects.",
+    "price": 19,
+    "image": "https://i.ibb.co/svKQfvBr/camera-8775444-1.png",
+    "featured": [
+      "10M+ assets",
+      "Commercial use",
+      "No attribution"
+    ],
+    "status": "New"
+  },
+  {
+    "id": 4,
+    "title": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline\nyour workflow with powerful tools.",
+    "price": 79,
+    "image": "https://i.ibb.co/6RsMMmkq/operation.png",
+    "featured": [
+      "50+ automations",
+      "API access",
+      "Custom workflows"
+    ],
+    "status": "Popular"
+  },
+  {
+    "id": 5,
+    "title": "Resume Builder Pro",
+    "description": "Create professional resumes and cover\nletters that land interviews.",
+    "price": 15,
+    "image": "https://i.ibb.co/g2Vwh65/portfolio.png",
+    "featured": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "status": "New"
+  },
+  {
+    "id": 6,
+    "title": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social\nmedia content across all platforms.",
+    "price": 39,
+    "image": "https://i.ibb.co/5WFXyYVW/social-media.png",
+    "featured": [
+      "5000+ assets",
+      "Scheduler included",
+      "Analytics dashboard"
+    ],
+    "status": "Best Seller"
+  }
+]
