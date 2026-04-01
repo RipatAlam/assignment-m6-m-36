@@ -5,8 +5,8 @@ import StartCreatingImage from "../../assets/rocket.png"
 
 const Account = () => {
     return (
-        <div className="bg-zinc-100 py-3">
-            <div className="text-center mt-10">
+        <div className="bg-zinc-100 py-20">
+            <div className="text-center mt-8">
                 <h1 className="text-4xl font-bold mb-4">Get Started in 3 Steps</h1>
                 <p className="text-zinc-500 text-[12px]">Start using premium digital tools in minutes, not hours.</p>
             </div>

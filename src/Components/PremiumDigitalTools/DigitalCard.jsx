@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import FeaturedData from "./FeaturedData";
+import { toast } from "react-toastify";
 
 const DigitalCard = ({ data, index, setSelectedCart, selectedCart }) => {
+  const [idBuyNow, setIdBuyNow] = useState(false);
 
-    const [idBuyNow, setIdBuyNow] = useState(false);
-
-    const handleBuyNow = () => {
-        setIdBuyNow(!idBuyNow);
-        alert(`${data.title} added to cart!`);
-        const newCart = [...selectedCart, data];
-        setSelectedCart(newCart);
-    }
+  const handleBuyNow = () => {
+    setIdBuyNow(!idBuyNow);
+    toast.success(`${data.title} added to cart!`);
+    const newCart = [...selectedCart, data];
+    setSelectedCart(newCart);
+  };
 
   const colors = [
     "bg-red-100 text-red-600",
@@ -30,20 +30,33 @@ const DigitalCard = ({ data, index, setSelectedCart, selectedCart }) => {
           {data.status}
         </p>
       </div>
-      <img
-        className="border border-zinc-200 p-3 rounded-full"
+      <div className="border-2 border-zinc-100 p-4 rounded-full w-max">
+        <img
+        className=""
         src={data.image}
         alt=""
       />
+      </div>
       <h1 className="text-2xl font-[700]">{data.title}</h1>
       <p className="text-zinc-500">{data.description}</p>
-      <h3 className="text-xl font-[700]">${data.price}<span className="text-sm font-[400] text-zinc-500">/{data.duration}</span> </h3>
+      <h3 className="text-xl font-[700]">
+        ${data.price}
+        <span className="text-sm font-[400] text-zinc-500">
+          /{data.duration}
+        </span>{" "}
+      </h3>
       <ul className=" text-zinc-500 space-y-1 font-[500]">
         {data.featured.map((feature, index) => (
           <FeaturedData key={index} feature={feature}></FeaturedData>
         ))}
       </ul>
-      <button onClick={handleBuyNow} disabled={idBuyNow ? true : false} className={`${!idBuyNow ? "bg-linear-to-r from-[#652DF7] to-[#9016f9] text-white w-full py-2 rounded-full" : "bg-linear-to-r from-[#7654ca] to-[#58505f] text-white w-full py-2 rounded-full"}`}>{!idBuyNow ? "Buy Now" : "Added to Cart"}</button>
+      <button
+        onClick={handleBuyNow}
+        disabled={idBuyNow ? true : false}
+        className={`${!idBuyNow ? "bg-linear-to-r from-[#652DF7] to-[#9016f9] text-white w-full py-2 rounded-full" : "bg-linear-to-r from-[#7654ca] to-[#58505f] text-white w-full py-2 rounded-full"}`}
+      >
+        {!idBuyNow ? "Buy Now" : "Added to Cart"}
+      </button>
     </div>
   );
 };

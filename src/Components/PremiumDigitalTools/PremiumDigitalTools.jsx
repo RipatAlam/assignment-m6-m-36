@@ -8,7 +8,7 @@ const PremiumDigitalTools = ({ toolsPromise }) => {
   const [selectedType, setSelectedType] = useState("Products");
   console.log(selectedType, "selectedType");
 
-  const [selectedCart, setSelectedCart] = useState([])
+  const [selectedCart, setSelectedCart] = useState([]);
 
   return (
     <>
@@ -37,12 +37,22 @@ const PremiumDigitalTools = ({ toolsPromise }) => {
         {selectedType === "Products" ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 mb-20 text-start">
             {DigitalData.map((data, index) => (
-              <DigitalCard key={data.id} index={index} data={data} selectedCart={selectedCart} setSelectedCart={setSelectedCart} />
+              <DigitalCard
+                key={data.id}
+                index={index}
+                data={data}
+                selectedCart={selectedCart}
+                setSelectedCart={setSelectedCart}
+              />
             ))}
           </div>
         ) : (
           <div className="mt-10">
-            <SelectedCart selectedCart={selectedCart} setSelectedCart={setSelectedCart} />
+            <SelectedCart
+              toolsPromise={toolsPromise}
+              selectedCart={selectedCart}
+              setSelectedCart={setSelectedCart}
+            />
           </div>
         )}
       </div>
