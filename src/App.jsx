@@ -6,6 +6,7 @@ import PremiumDigitalTools from "./Components/PremiumDigitalTools/PremiumDigital
 import RatingNumber from "./Components/RatingNumber/RatingNumber";
 import DigitalTools from ".././public/DigitalTools.json";
 import { Suspense } from "react";
+import Account from "./Components/Account/Account";
 
 const toolsPromise = fetch("DigitalTools.json")
   .then(res => res.json());
@@ -18,9 +19,11 @@ function App() {
       <Banner></Banner>
       <RatingNumber></RatingNumber>
 
-      <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+      <Suspense fallback={<span className="loading loading-spinner loading-xl justify-center align-center"></span>}>
         <PremiumDigitalTools toolsPromise={toolsPromise}></PremiumDigitalTools>
       </Suspense>
+
+      <Account></Account>
     </>
   );
 }

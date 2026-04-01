@@ -4,6 +4,7 @@
     "title": "AI Writing Pro",
     "description": "Generate high-quality content, blogs\nMarketing copy in seconds with AI\n",
     "price": 29,
+    "duration": "Mo",
     "image": "https://i.ibb.co/Lz2jNqCM/writing-2327400-1.png",
     "featured": [
       "Unlimited AI generations",
@@ -17,6 +18,7 @@
     "title": "Design Templates Pack",
     "description": "2000+ premium templates for social media,\nrepresentations, and marketing materials.",
     "price": 49,
+    "duration": "One-time",
     "image": "https://i.ibb.co/FLMjQcmv/design-tool.png",
     "featured": [
       "2000+ templates",
@@ -30,6 +32,7 @@
     "title": "Premium Stock Assets",
     "description": "Access millions of royalty-free photos,\nvideos, and graphics for your projects.",
     "price": 19,
+    "duration": "Mo",
     "image": "https://i.ibb.co/svKQfvBr/camera-8775444-1.png",
     "featured": [
       "10M+ assets",
@@ -43,6 +46,7 @@
     "title": "Automation Toolkit",
     "description": "Automate repetitive tasks and streamline\nyour workflow with powerful tools.",
     "price": 79,
+    "duration": "Mo",
     "image": "https://i.ibb.co/6RsMMmkq/operation.png",
     "featured": [
       "50+ automations",
@@ -56,6 +60,7 @@
     "title": "Resume Builder Pro",
     "description": "Create professional resumes and cover\nletters that land interviews.",
     "price": 15,
+    "duration": "One-time",
     "image": "https://i.ibb.co/g2Vwh65/portfolio.png",
     "featured": [
       "100+ templates",
@@ -69,6 +74,7 @@
     "title": "Social Media Content Kit",
     "description": "Complete toolkit for creating engaging social\nmedia content across all platforms.",
     "price": 39,
+    "duration": "Mo",
     "image": "https://i.ibb.co/5WFXyYVW/social-media.png",
     "featured": [
       "5000+ assets",
